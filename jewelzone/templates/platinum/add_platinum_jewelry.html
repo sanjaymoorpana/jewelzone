@@ -1,0 +1,180 @@
+{% extends 'seller_header.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jewel-shop</title>
+    
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/global.css' %}" rel="stylesheet">
+	<link href="{% static 'css/index.css' %}" rel="stylesheet">
+	<link href="{% static 'css/about.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop.css' %}" rel="stylesheet">
+	<link href="{% static 'css/contact.css' %}" rel="stylesheet">
+	<link href="{% static 'css/blog.css' %}" rel="stylesheet">
+	<link href="{% static 'css/detail.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop_detail.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+	<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <style type="text/css">
+        span {
+            color: darkorange;
+        }
+
+        .sanjay,
+        .akil {
+            padding: 15px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            
+        }
+
+        .row1 {
+            background-color: lightgrey;
+            /* background-image: url("{% static 'img/110.jpg' %}"); */
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        legend {
+            background-color: white;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        input {
+            margin: 5px;
+            width: 200px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+<br>
+    <center>
+        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Add Platinum Jewelry</h1>
+        <br>
+        {% if msg %}
+        {{msg}}
+        {% endif %}
+        <br><br>
+        <form name="add_platinum_jewelry" method="POST" action="{% url 'add_platinum_jewelry' %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="row1">
+                <table>
+                    <tr class="sanjay">
+                        <td class="akil">Category</td>
+                        <td class="akil">
+                            <select name="platinum_category">
+                                <option>---Select Platinum Category---</option>
+                                <option value="rings">Rings</option>
+                                <option value="necklace">Necklace</option>
+                                <option value="earrings">Earrings</option>
+                                <option value="pendants">Pendants</option>
+                                <option value="bracelet">Bracelet</option>
+                                <option value="chains">Chains</option>                                
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Name</td>
+                        <td class="akil"><input type="text" name="platinum_name" required="required"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Design Code</td>
+                        <td class="akil"><input type="text" name="platinum_des_code" required="required"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Price</td>
+                        <td class="akil"><input type="text" name="platinum_price" required="required"></td>
+                    </tr>                    
+                    
+                    <tr class="sanjay">
+                        <td class="akil">Gross Weight (g)</td>
+                        <td class="akil"><input type="text" name="platinum_gross" required="required"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Net Weight (g)</td>
+                        <td class="akil"><input type="text" name="platinum_net"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Gender</td>
+                        <td class="akil">
+                            <select name="platinum_gender">
+                                <option>---Select Gender---</option>
+                                <option value="men">Men</option>
+                                <option value="women">Women</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <tr class="sanjay">
+                        <td class="akil">Metal Colour</td>
+                        <td class="akil">
+                            <select name="platinum_metal_colour">
+                                <option>---Select Metal Colour---</option>
+                                <option value="platinum">Platinum</option>
+                                <option value="two_tone">Two Tone</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Platinum Purity</td>
+                        <td class="akil"><input type="text" name="platinum_purity"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                            <td class="akil">Platinum Certification</td>
+                            <td class="akil"><input type="text" name="platinum_certification"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Diamond Certification</td>
+                        <td class="akil"><input type="text" name="platinum_diamond_certification"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Image</td>
+                        <td class="akil"><input type="file" name=platinum_image required="required"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td colspan="2" class="akil" align="center">
+                            <input type="submit" name="submit" class="btn btn-primary" value="Add Platinum Jewelry">
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+        </form>
+    </center>
+    <br>
+
+    
+
+    {% include 'footer.html' %}
+</body>
+</html>
+{% endblock %}

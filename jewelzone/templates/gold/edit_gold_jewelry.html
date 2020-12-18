@@ -1,0 +1,190 @@
+{% extends 'seller_header.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jewel-shop</title>
+    
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/global.css' %}" rel="stylesheet">
+	<link href="{% static 'css/index.css' %}" rel="stylesheet">
+	<link href="{% static 'css/about.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop.css' %}" rel="stylesheet">
+	<link href="{% static 'css/contact.css' %}" rel="stylesheet">
+	<link href="{% static 'css/blog.css' %}" rel="stylesheet">
+	<link href="{% static 'css/detail.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop_detail.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+	<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <style type="text/css">
+        span {
+            color: darkorange;
+        }
+
+        .sanjay,
+        .akil {
+            padding: 15px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+            
+        }
+
+        .row1 {
+            background-color: lightgrey;
+            /* background-image: url("{% static 'img/110.jpg' %}"); */
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        legend {
+            background-color: white;
+            color: white;
+            padding: 5px 10px;
+        }
+
+        input {
+            margin: 5px;
+            width: 200px;
+        }
+
+    </style>
+     
+</head>
+
+
+<body>
+<br>
+    <center>
+        <h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Edit Gold Jewelry</h1>
+        <br>
+        {% if msg %}
+        {{msg}}
+        {% endif %}
+        <br><br>
+        <form name="edit_gold_jewelry" method="POST" action="{% url 'edit_gold_jewelry' pk=gold_jew.pk %}" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="row1">
+                <table>
+
+                    <!-- <tr>
+                        <td>Size</td>
+                        <td>
+                            <select name="size">
+                                {% for i in size %}
+                                    <option>{{i}}</option>
+                                {% endfor %}
+                            </select>
+                        </td>
+                    </tr> -->
+
+
+                    <tr class="sanjay">
+                        <td class="akil">Name</td>
+                        <td class="akil"><input type="text" name="gold_name" value="{{gold_jew.gold_name}}" required="required" ></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Design Code</td>
+                        <td class="akil"><input type="text" name="gold_des_code" value="{{gold_jew.gold_des_code}}" required="required"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Price</td>
+                        <td class="akil"><input type="text" name="gold_price" value="{{gold_jew.gold_price}}" required="required"></td>
+                    </tr>                    
+                    
+                    <tr class="sanjay">
+                        <td class="akil">Gross Weight (g)</td>
+                        <td class="akil"><input type="text" name="gold_gross" value="{{gold_jew.gold_gross}}" required="required"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Net Weight (g)</td>
+                        <td class="akil"><input type="text" name="gold_net" value="{{gold_jew.gold_net}}"></td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Stone Weight (g)</td>
+                        <td class="akil"><input type="text" name="gold_stone_wt" value="{{gold_jew.gold_stone_wt}}"></td>
+                    </tr>
+                    
+                    <tr class="sanjay">
+                        <td class="akil">Gender</td>
+                        <td class="akil">
+                            <select name="gold_gender" required="required">
+                                <option>---Select Gender---</option>
+                                {% if gold_jew.gold_gender == "men" %}
+                                    <option value="{{gold_jew.gold_gender}}" selected>Men</option>
+                                    <option value="{{gold_jew.gold_gender}}">Women</option>
+                                {% elif gold_jew.gold_gender == "women" %}
+                                    <option value="{{gold_jew.gold_gender}}">Men</option>
+                                    <option value="{{gold_jew.gold_gender}}" selected>Women</option>
+                                {%  endif %}
+                            </select>
+                        </td>
+                    </tr>
+
+
+                    <tr class="sanjay">
+                        <td class="akil">Metal Colour</td>
+                        <td class="akil">
+                            <select name="gold_metal_colour" required="required">
+                                <option>---Select Metal Colour---</option>
+                                {% if gold_jew.gold_metal_colour == "yellow" %}
+                                    <option value="{{gold_jew.gold_metal_colour}}" selected>Yellow</option>
+                                    <option value="{{gold_jew.gold_metal_colour}}">Rose</option>
+                                    <option value="{{gold_jew.gold_metal_colour}}">Two Tone</option>
+                                {% elif gold_jew.gold_metal_colour == "rose" %}
+                                    <option value="{{gold_jew.gold_metal_colour}}">Yellow</option>
+                                    <option value="{{gold_jew.gold_metal_colour}}" selected>Rose</option>
+                                    <option value="{{gold_jew.gold_metal_colour}}">Two Tone</option>
+                                {% elif gold_jew.gold_metal_colour == "two_tone" %}
+                                    <option value="{{gold_jew.gold_metal_colour}}">Yellow</option>
+                                    <option value="{{gold_jew.gold_metal_colour}}">Rose</option>
+                                    <option value="{{gold_jew.gold_metal_colour}}" selected>Two Tone</option>
+                                {% endif %}
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td class="akil">Image</td>
+                        <td class="akil"><input type="file" name=gold_image value="{{gold_jew.gold_image}}"></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <img src="{{gold_jew.gold_image.url}}" height="200px" width="200px">
+                        </td>
+                    </tr>
+
+                    <tr class="sanjay">
+                        <td colspan="2" class="akil" align="center">
+                            <input type="submit"  class="btn btn-primary" value="Update Gold Jewelry Details">
+                        </td>
+                    </tr>
+                </table>
+
+            </fieldset>
+        </form>
+    </center>
+    <br>
+
+    
+
+    {% include 'footer.html' %}
+</body>
+</html>
+{% endblock %}

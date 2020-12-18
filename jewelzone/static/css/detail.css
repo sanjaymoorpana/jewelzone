@@ -1,0 +1,308 @@
+/*
+Template Name:Jewel-shop
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+body{
+font-family: 'Oswald', sans-serif
+   }
+h1,h2,h3,h4,h5,h6{
+padding:0;
+margin:0;
+}
+a:hover{
+text-decoration:none;
+}
+ul{
+padding:0;
+margin:0;
+list-style:none;
+}
+p{
+padding:0;
+margin:0;
+}
+.space_left{
+padding-left:0; 
+} 
+.space_right{
+padding-right:0; 
+} 
+.space_all{
+padding:0; 
+} 
+.border_none_1{
+   border:none!important;
+   }
+.active_tab{
+   color:#c08585!important;
+  }
+.left_1{
+  display:block;
+ }
+
+
+
+
+/*********************detail****************/
+.detail_top h4{
+font-size:22px;
+text-align:center;
+letter-spacing:1px;
+padding-top:20px;
+}
+.detail_top .dating_1{
+color:#CCCCCC;
+}
+.detail_top h5{
+font-size:16px;
+color:#CCCCCC;
+text-align:center;
+letter-spacing:1px;
+padding-top:10px;
+}
+.detail_top h5 a:hover{
+color:#FF9900;
+}
+.detail_top p{
+font-size:16px;
+color:#333;
+letter-spacing:1px;
+padding-top:20px;
+line-height:30px;
+}
+.detail_top h6{
+font-size:14px;
+color:#333;
+text-align:center;
+letter-spacing:1px;
+padding-top:20px;
+}
+.contact_home_right_inner {
+    margin-top:50px;
+	text-align:center;
+	}
+
+/* footer social icons */
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+.detail_top h2{
+font-size:22px;
+color:#333;
+letter-spacing:1px;
+padding-top:20px;
+padding-bottom:50px;
+}
+.detail_top_middle_left_inner p{
+text-align: center;
+font-size: 36px;
+background: #ccc;
+color:#FFFFFF;
+border-radius: 50%;
+width: 64px;
+height: 65px;
+}
+.detail_top_middle_right_inner h4{
+font-size:22px;
+color:#333;
+letter-spacing:1px;
+padding-bottom:10px;
+}
+.detail_top_middle_right_inner p{
+font-size:16px;
+color:#666;
+line-height:30px;
+letter-spacing:2px;
+padding-bottom:10px;
+font-family: 'Raleway', sans-serif;
+}
+.detail_top_middle_right_inner p a{
+font-size:10px;
+color:#FFCC00;
+}
+.detail_top_bottom h4{
+font-size:22px;
+letter-spacing:1px;
+padding-top:20px;
+padding-left:10px;
+padding-bottom:20px;
+}
+.details_comments .form-control_detail{
+height:45px;
+background:#f6f6f5;
+color:#7f8385;
+border:1px solid #e9e9e9;
+}
+.details_comments_2 .form-detail_2{
+margin-top:30px;
+margin-left:10px;
+height:185px;
+background:#f6f6f5;
+color:#7f8385;
+border:1px solid #e9e9e9;
+}
+.details_comments_2 p{
+padding-top:50px;
+padding-left:10px;
+}
+.details_comments_2 p a{
+padding:8px 18px;
+background:#556681;
+color:#FFFFFF;
+border-radius:5px;
+letter-spacing:2px;
+}
+
+/* footer social icons */
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	text-align:center;
+	width: 50px;
+	height: 50px;
+	font-size:20px;
+	background:#999999;
+}
+.social-circle li i {
+	margin:0;
+	line-height:50px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: #000;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.contact_home_right ul a {
+ background-color: #dd3744;  
+}
+
+/*********************detail_end****************/
+
+
+
+
+@media screen and (max-width : 767px){
+.detail_top {
+padding:0;
+margin:0;
+}
+.detail_top p {
+text-align: center;
+}
+.social-circle li a {
+width: 40px;
+height: 40px;
+font-size: 16px;
+}
+.social-circle li i {
+line-height: 40px;
+}
+.detail_top h2 {
+padding-bottom: 30px;
+text-align: center;
+}
+.detail_top_middle{
+text-align: center;
+}
+.detail_top_middle_left_inner p {
+margin: auto;
+}
+.detail_top_bottom {
+text-align: center;
+}
+.details_comments .form-control_detail {
+    margin-bottom: 20px;
+}
+.details_comments_2 .form-detail_2 {
+margin-left: 0px;
+width: 100%;
+}
+
+}
+
+@media (min-width:768px) and (max-width:960px) { 
+#blog_2 {
+padding-top: 0px;
+padding-bottom: 30px;
+}
+.detail_top_middle_left_inner p {
+font-size: 30px;
+width: 50px;
+height: 50px;
+}
+.details_comments_2 .form-detail_2 {
+margin-left: 0px;
+}
+
+}
+
+@media (min-width:961px) and (max-width:1200px) {
+.blog_2_top_left_inner p a img{
+width:100%;
+}
+
+}
+
+@media (min-width:1201px) and (max-width:1250px) {
+
+ }
+
+
+
+
+

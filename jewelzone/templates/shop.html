@@ -1,0 +1,1157 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jewel-shop</title>
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/global.css' %}" rel="stylesheet">
+	<link href="{% static 'css/index.css' %}" rel="stylesheet">
+	<link href="{% static 'css/about.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop.css' %}" rel="stylesheet">
+	<link href="{% static 'css/contact.css' %}" rel="stylesheet">
+	<link href="{% static 'css/header.css' %}" rel="stylesheet">
+	<link href="{% static 'css/blog.css' %}" rel="stylesheet">
+	<link href="{% static 'css/detail.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop_detail.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+	<link href="{% static 'https://fonts.googleapis.com/css?family=Oswald' %}" rel="stylesheet">
+	<link href="{% static 'https://fonts.googleapis.com/css?family=Pacifico' %}" rel="stylesheet">
+	<link href="{% static 'https://fonts.googleapis.com/css?family=Fredericka+the+Great' %}" rel="stylesheet">
+	<link href="{% static 'https://fonts.googleapis.com/css?family=Merriweather' %}" rel="stylesheet">
+	<link href="{% static 'https://fonts.googleapis.com/css?family=Cormorant+Garamond' %}" rel="stylesheet">
+	<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    
+	
+     
+
+  </head>
+  
+<body>
+<section id="header" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="header_top clearfix">
+    <div class="col-sm-3 header_top_left clearfix">
+	 <div class="header_top_left_inner clearfix">
+	  <p><a href="#">Call1800-222-9289</a></p>
+	 </div>
+	</div>
+	<div class="col-sm-4 header_top_middle clearfix">
+	 <div class="header_top_middle_inner clearfix">
+	  <p><a href="#"><span class="trouble_1">INTEGER NEC ODIONEC</span>FLAT 30% OFF ON CONUBIA NOSTRA</a></p>
+	 </div>
+	</div>
+	<div class="col-sm-5 header_top_right clearfix">
+	 <div class="header_top_right_inner clearfix">
+	  <ul>
+	   <li><a href="#"><img src="{% static 'img/1.png' %}"></a><span class="trouble_2">|</span></li>
+	   <li><a href="#">Log in</a><span class="trouble_2">|</span></li>
+	   <li><a href="#">Sign up</a><span class="trouble_2">|</span></li>
+	   <li class="dropdown">
+					  <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false">Wishlist(0)<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a class="tag_menu_down" href="#">No products in the cart</a></li>
+					  </ul>
+                    <span class="trouble_2">|</span></li>
+	   <li class="dropdown">
+					  <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false">Try@Home(0)<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a class="tag_menu_down" href="#">No products in the cart</a></li>
+					  </ul>
+                    </li>
+	  </ul>
+	 </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="header_2"  class="cd-secondary-nav">
+	<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="{% static 'img/2.png' %}"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+				 <ul class="nav navbar-nav">
+				 
+                    <li>
+                        <a class="tag_menu" href="index.html">HOME</a>
+                    </li>
+                    
+                    <li>
+                        <a class="tag_menu" href="blog.html">BLOG</a>
+                    </li>
+					
+					<li>
+                        <a class="tag_menu" href="detail.html">DETAIL</a>
+                    </li>
+					
+					<li>
+                        <a class="tag_menu active_tab" href="shop.html">SHOP</a>
+                    </li>
+					<li>
+                        <a class="tag_menu" href="shop_detail.html">SHOP-DETAIL</a>
+                    </li>
+					
+					<li>
+                        <a class="tag_menu" href="about.html">ABOUT</a>
+                    </li>
+					
+					<li>
+                        <a class="tag_menu" href="contact.html">CONTACT</a>
+                    </li>
+					
+					<li class="dropdown">
+					  <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+					  <ul class="dropdown-menu drop_1" role="menu">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blogpost</a></li>
+						<li><a href="detail.html">Detail</a></li>
+						<li><a href="shop.html">Grade</a></li>
+					  </ul>
+                    </li>
+				 </ul>
+				 <ul class="nav navbar-right">
+				  <li><a class="tab_3" href="#"><i class="fa fa-search"></i></a></li>
+				  <li><a class="tab_3" href="#"><i class="fa fa-bell"></i></a></li>
+				  <li><a class="tab_3" href="#"><i class="fa fa-shopping-cart"></i></a></li>
+				 </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+
+<section id="shop" class="clearfix">
+ <div class="shop clearfix">
+ <h5><a href="#">Home <i class="fa fa-chevron-right"></i></a><span class="shopper_1">Jewellery</span></h5>
+ </div>
+</section>
+
+<section id="shop_2" class="clearfix">
+ <div class="shop_2 clearfix">
+  <div class="col-sm-3 shop_2_left clearfix">
+   <div class="shop_2_left_inner_1 clearfix">
+    <h4>Filter By</h4>
+   </div>
+   <div class="shop_2_left_inner_2 clearfix">
+    <div class="panel panel-primary">
+                <div class="panel-heading shop_2_left_inner_2_top clearfix">
+                    <h3 class="panel-title">FUSCE</h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
+                </div>
+                <div class="panel-body shop_2_left_inner_2_bottom" style="display: block;">
+                    <div class="shop_2_left_inner_2_bottom_inner clearfix">
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Ipsum C$93 </span><span class="offer_2">(164)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">C$94 To C$193  </span><span class="offer_2">(735)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">C$194 To C$290</span><span class="offer_2">(754)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">C$290 To C$386</span><span class="offer_2">(953)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">C$387 To C$579</span><span class="offer_2">(1824)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">C$580 To C$772</span><span class="offer_2">(826)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">C$387 To C$579</span><span class="offer_2">(253)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">C$387 To C$579</span><span class="offer_2">(724)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">C$387 To C$579</span><span class="offer_2">(623)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">C$387 To C$579</span><span class="offer_2">(485)</span></a></h5>
+					</div>
+			 </div>
+            </div>
+   </div>
+   <div class="shop_2_left_inner_2 clearfix">
+    <div class="panel panel-primary">
+                <div class="panel-heading shop_2_left_inner_2_top clearfix">
+                    <h3 class="panel-title">DAPIBUS DIAM</h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
+                </div>
+                <div class="panel-body shop_2_left_inner_2_bottom" style="display: block;">
+                    <div class="shop_2_left_inner_2_bottom_inner clearfix">
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Mauris</span><span class="offer_2">(175)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Nibh</span><span class="offer_2">(724)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Sociosqu</span><span class="offer_2">(652)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Lacinia</span><span class="offer_2">(725)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Imperdiet</span><span class="offer_2">(1427)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Dapibus</span><span class="offer_2">(644)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Nulla</span><span class="offer_2">(386)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Eget</span><span class="offer_2">(534)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Dignissim</span><span class="offer_2">(526)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Quis Nisi</span><span class="offer_2">(624)</span></a></h5>
+					</div>
+			 </div>
+            </div>
+   </div>
+   <div class="shop_2_left_inner_2 clearfix">
+    <div class="panel panel-primary">
+                <div class="panel-heading shop_2_left_inner_2_top clearfix">
+                    <h3 class="panel-title">SEMPER TELLUS</h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
+                </div>
+                <div class="panel-body shop_2_left_inner_2_bottom" style="display: block;">
+                    <div class="shop_2_left_inner_2_bottom_inner clearfix">
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">0-2</span><span class="offer_2">(524)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2-5</span><span class="offer_2">(725)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">5-10</span><span class="offer_2">(926)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">10-20</span><span class="offer_2">(625)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">20-30</span><span class="offer_2">(1427)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">> 30</span><span class="offer_2">(826)</span></a></h5>
+					</div>
+			 </div>
+            </div>
+   </div>
+   <div class="shop_2_left_inner_2 clearfix">
+    <div class="panel panel-primary">
+                <div class="panel-heading shop_2_left_inner_2_top clearfix">
+                    <h3 class="panel-title">MATERIAL</h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
+                </div>
+                <div class="panel-body shop_2_left_inner_2_bottom" style="display: block;">
+                    <div class="shop_2_left_inner_2_bottom_inner shop_2_left_inner_2_bottom_inner_2 clearfix">
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Elementum</span><span class="offer_2">(252)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Duis</span><span class="offer_2">(826)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Sagittis</span><span class="offer_2">(926)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Vestibulum</span><span class="offer_2">(726)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">Torquent</span><span class="offer_2">(1724)</span></a></h5>
+					</div>
+			 </div>
+            </div>
+   </div>
+   <div class="shop_2_left_inner_2 clearfix">
+    <div class="panel panel-primary">
+                <div class="panel-heading shop_2_left_inner_2_top clearfix">
+                    <h3 class="panel-title">AUGUE</h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
+                </div>
+                <div class="panel-body shop_2_left_inner_2_bottom" style="display: block;">
+                    <div class="shop_2_left_inner_2_bottom_inner clearfix">
+					 <div class="moovers_top clearfix">
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>22 KT</h3>
+					   <h3>Yellow</h3>
+					  </div>
+					 </div>
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>18 KT</h3>
+					   <h3>Yellow</h3>
+					  </div>
+					 </div>
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>18 KT</h3>
+					   <h3>White</h3>
+					  </div>
+					 </div>
+					 </div>
+					 <div class="moovers_top clearfix">
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>22 KT</h3>
+					   <h3>Rose</h3>
+					  </div>
+					 </div>
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>18 KT</h3>
+					   <h3>Yellow</h3>
+					  </div>
+					 </div>
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>18 KT</h3>
+					   <h3>White</h3>
+					  </div>
+					 </div>
+					 </div>
+					 <div class="moovers_top clearfix">
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>22 KT</h3>
+					   <h3>Rose</h3>
+					  </div>
+					 </div>
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>18 KT</h3>
+					   <h3>Yellow</h3>
+					  </div>
+					 </div>
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>18 KT</h3>
+					   <h3>White</h3>
+					  </div>
+					 </div>
+					 </div>
+					 <div class="moovers_top clearfix">
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>22 KT</h3>
+					   <h3>Rose</h3>
+					  </div>
+					 </div>
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>18 KT</h3>
+					   <h3>Yellow</h3>
+					  </div>
+					 </div>
+					 <div class="col-sm-4 moving_left clearfix">
+					  <div class="moving_left_inner clearfix">
+					   <p><i class="fa fa-firefox"></i></p>
+					   <h3>18 KT</h3>
+					   <h3>White</h3>
+					  </div>
+					 </div>
+					 </div>
+					</div>
+			 </div>
+            </div>
+   </div>
+   <div class="shop_2_left_inner_2 clearfix">
+    <div class="panel panel-primary">
+                <div class="panel-heading shop_2_left_inner_2_top clearfix">
+                    <h3 class="panel-title">Ring size(Ready to ship)</h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
+                </div>
+                <div class="panel-body shop_2_left_inner_2_bottom" style="display: block;">
+                    <div class="shop_2_left_inner_2_bottom_inner clearfix">
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">5</span><span class="offer_2">(59)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">6</span><span class="offer_2">(116)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">7</span><span class="offer_2">(184)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">8</span><span class="offer_2">(334)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">9</span><span class="offer_2">(363)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">10</span><span class="offer_2">(433)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">11</span><span class="offer_2">(531)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">12</span><span class="offer_2">(1048)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">13</span><span class="offer_2">(512)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">14</span><span class="offer_2">(304)</span></a></h5>
+					</div>
+			 </div>
+            </div>
+   </div>
+   <div class="shop_2_left_inner_2 clearfix">
+    <div class="panel panel-primary">
+                <div class="panel-heading shop_2_left_inner_2_top clearfix">
+                    <h3 class="panel-title">Bangle size(Ready to ship)</h3>
+                    <span class="pull-right clickable"><i class="glyphicon glyphicon-minus"></i></span>
+                </div>
+                <div class="panel-body shop_2_left_inner_2_bottom" style="display: block;">
+                    <div class="shop_2_left_inner_2_bottom_inner clearfix">
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.2</span><span class="offer_2">(11)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.3</span><span class="offer_2">(10)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.4</span><span class="offer_2">(73)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.5</span><span class="offer_2">(47)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.6</span><span class="offer_2">(37)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.7</span><span class="offer_2">(4)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.8</span><span class="offer_2">(10)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.10</span><span class="offer_2">(2)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.11</span><span class="offer_2">(5)</span></a></h5>
+					 <h5><a href="#"><input class="main-box" type="checkbox"><span class="offer_1">2.12</span><span class="offer_2">(1)</span></a></h5>
+					</div>
+			 </div>
+            </div>
+   </div>
+   <div class="shop_2_left_inner_3 clearfix">
+    <p><a href="#">See More FIilter</a></p>
+   </div>
+  </div>
+  <div class="col-sm-9 shop_2_right clearfix">
+   <div class="shop_2_right_main clearfix">
+    <div class="shop_2_right_main_top clearfix">
+	 <div class="col-sm-3 shop_2_right_main_top_left clearfix">
+	  <div class="shop_2_right_main_top_left_inner clearfix">
+	   <p>25 of 5876 Designs</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_top_middle clearfix">
+	  <div class="shop_2_right_main_top_middle_inner clearfix">
+	   <div class="well welcome-text">
+          <button class="btn btn-default btn-login">Enter your pincode <span class="caret"></span></button>
+        </div>
+		<div class="col-sm-12 loofer_top clearfix">
+            <div class="well login-box">
+                <form action="http://bootsnipp-env.elasticbeanstalk.com/iframe/k2bEV">
+                    <legend>Nulla quis sem nibh elementum Try@Home</legend>
+                    <div class="form-group">
+                        <label for="username-email">E-mail or Username</label>
+                        <input value="" id="username-email" placeholder="E-mail or Username" type="text" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Pincode</label>
+                        <input id="password" value="" placeholder="Password" type="text" class="form-control">
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-danger btn-cancel-action">Cancel</button>
+                        <input type="submit" class="btn btn-success btn-login-submit" value="Login">
+                    </div>
+                </form>
+            </div>
+          <div class="logged-in well" style="margin-top: 272.5px;">
+            <h1>You are loged in! <div class="pull-right"><button class="btn-logout btn btn-danger"><span class="glyphicon glyphicon-off"></span> Logout</button></div></h1>
+          </div>
+        </div>
+	  </div>
+	 </div>
+	 <div class="col-sm-2 delivery clearfix">
+	  <div class="delivery_inner clearfix">
+	   <h5><input class="main-box" type="checkbox"><i class="fa fa-truck"></i>Fast Delivery</h5>
+	  </div>
+	 </div>
+	 <div class="col-sm-2 delivery clearfix">
+	   <div class="delivery_inner clearfix">
+	   <h5><input class="main-box" type="checkbox"><span class="bowler_1">Below C$ 624</span></h5>
+	  </div>
+	 </div>
+	 <div class="col-sm-2 shooter clearfix">
+	  <div class="shooter_inner clearfix">
+	   <div class="button-group clearfix">
+    <a class="btn-clean button-dropdown retro" href="#" data-toggle="dropdown" aria-expanded="true">
+      <span class="retro_1">Featured</span>  <i class="fa fa-chevron-down"></i>
+    </a>
+
+    <ul class="clean dropdown-menu">
+      <li><a class="retro_1" href="#">Sagittis</a></li>
+      <li><a class="retro_1" href="#">Dapibus Nibh</a></li>
+	  <li><a class="retro_1" href="#">Dolor</a></li>
+	  <li><a class="retro_1" href="#">Sagittis</a></li>
+      <li><a class="retro_1" href="#">Dapibus Nibh</a></li>
+	  <li><a class="retro_1" href="#">Dolor</a></li>
+    </ul>
+  </div>
+	  </div>
+	 </div>
+	</div>
+	<div class="shop_2_right_main_middle clearfix">
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/27.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/28.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/29.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/30.png' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	</div>
+	<div class="shop_2_right_main_middle clearfix">
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/31.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/32.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/33.png' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/34.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	</div>
+	<div class="shop_2_right_main_middle clearfix">
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/35.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/36.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/37.jpg' %}">
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/38.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	</div>
+	<div class="shop_2_right_main_middle clearfix">
+	 <div class="col-sm-6 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+                    <img src="{% static 'img/40.png' %}" width="100%" />
+                
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/39.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/41.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	</div>
+	<div class="shop_2_right_main_middle clearfix">
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/42.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/43.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/44.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	 <div class="col-sm-3 shop_2_right_main_middle_left clearfix">
+	  <div class="shop_2_right_main_middle_left_inner clearfix">
+	   <div class="view view-tenth">
+                    <img src="{% static 'img/45.jpg' %}" />
+                    <div class="mask">
+                        <h2>Augue Dolor #20</h2>
+                        <p>A Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla dignissim lacinia nunc.</p>
+                        <a href="#" class="info">Read More</a>
+                    </div>
+                </div>
+	  </div>
+	  <div class="shop_2_right_main_middle_left_inner_2 clearfix">
+	   <h5>C$ 365<span class="doller_1">C$ 394</span></h5>
+	   <p>Diam 25% off on Conubia Nostra</p>
+	  </div>
+	 </div>
+	</div>
+	<div class="shop_2_right_main_middle_2 clearfix">
+	 <p><a href="#">Show More</a></p>
+	</div>
+	<div class="shop_2_right_main_middle_3 clearfix">
+	 <div class="shop_2_right_main_middle_3_top clearfix">
+	  <h4>Customer Testimonials</h4>
+	  <p>Sed cursus ante dapibus. Nulla quis sem elementum 45,000+ imperdiet.</p>
+	 </div>
+	 <div class="shop_2_right_main_middle_3_middle clearfix">
+	  <div class="col-sm-12 costomer clearfix">
+                <div id="Carousel" class="carousel slide">
+                 
+                <ol class="carousel-indicators">
+                    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#Carousel" data-slide-to="1"></li>
+                </ol>
+                 
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    
+                <div class="item active">
+                	<div class="row">
+                	  <div class="col-sm-4 costomer_left clearfix">
+					  <div class="costomer_left_inner text-center clearfix">
+					   <h4>Taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodas.</h4>
+					   <h3><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
+					   <h5><a href="#" class="img-circle"><img src="{% static 'img/46.jpg' %}"></a></h5>
+					   <p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla Sed dignissim lacinia nunc ipsum arcu nala...
+</p>
+					  </div>
+					  </div>
+                	  <div class="col-sm-4 costomer_left clearfix">
+					  <div class="costomer_left_inner text-center clearfix">
+					   <h4>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget.</h4>
+					   <h3><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
+					   <h5><a href="#" class="img-circle"><img src="{% static 'img/47.jpg' %}"></a></h5>
+					   <p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla Sed dignissim lacinia nunc ipsum arcu nala...
+</p>
+					  </div>
+					  </div>
+                	  <div class="col-sm-4 costomer_left clearfix">
+					  <div class="costomer_left_inner text-center clearfix">
+					   <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio praesent libero.</h4>
+					   <h3><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
+					   <h5><a href="#" class="img-circle"><img src="{% static 'img/48.jpg' %}"></a></h5>
+					   <p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla Sed dignissim lacinia nunc ipsum arcu nala...
+</p>
+					  </div>
+					  </div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                 
+                <div class="item">
+                	<div class="row">
+                		<div class="col-sm-4 costomer_left clearfix">
+					  <div class="costomer_left_inner text-center clearfix">
+					   <h4>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales.</h4>
+					   <h3><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
+					   <h5><a href="#" class="img-circle"><img src="{% static 'img/49.jpg' %}"></a></h5>
+					   <p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla Sed dignissim lacinia nunc ipsum arcu nala...
+</p>
+					  </div>
+					  </div>
+                		<div class="col-sm-4 costomer_left clearfix">
+					  <div class="costomer_left_inner text-center clearfix">
+					   <h4>Dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio. Praesent libero</h4>
+					   <h3><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
+					   <h5><a href="#" class="img-circle"><img src="{% static 'img/50.jpg' %}" alt="Image" style="max-width:100%;"></a></h5>
+					   <p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla Sed dignissim lacinia nunc ipsum arcu nala...
+</p>
+					  </div>
+					  </div>
+                		<div class="col-sm-4 costomer_left clearfix">
+					  <div class="costomer_left_inner text-center clearfix">
+					   <h4>Cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet Duis arcu eget</h4>
+					   <h3><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></h3>
+					   <h5><a href="#" class="img-circle"><img src="{% static 'img/51.jpg' %}"></a></h5>
+					   <p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla Sed dignissim lacinia nunc ipsum arcu nala...
+</p>
+					  </div>
+					  </div>
+                	</div><!--.row-->
+                </div><!--.item-->
+                 
+               <!--.item-->
+                 
+                </div><!--.carousel-inner-->
+                  <a data-slide="prev" href="http://bootsnipp-env.elasticbeanstalk.com/iframe/kE4g#Carousel" class="left carousel-control">‹</a>
+                  <a data-slide="next" href="http://bootsnipp-env.elasticbeanstalk.com/iframe/kE4g#Carousel" class="right carousel-control">›</a>
+                </div><!--.Carousel-->
+                 
+		</div> 
+	  <div class="costomer_bottom clearfix">
+	   <p><a href="#">More Customer Stories</a></p>
+	  </div>
+	 </div>
+	</div>
+	<div class="shop_2_right_main_middle_4 clearfix">
+	 <h2>Amet, consectetur adipiscing</h2>
+	 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. Sed dignissim lacinia nunc.</p>
+	 <h4>Nec tellus augue semper</h4>
+	 <p>Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum nec odionec odio. Praesent libero. lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. Sed dignissim lacinia nunc. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu !</p>
+	 <h4 class="trevel_1"><a href="#">Sed dignissim lacinia</a></h4>
+	 <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in at Rs. 6,000 to over Rs. 2,68,000. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum nec odionec odio. Praesent libero. lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. Sed dignissim lacinia nunc. Praesent mauris. Fusce nec tellus sed augue!</p>
+	 <h4 class="trevel_1"><a href="#">Sed Dignissim</a></h4>
+	 <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum nec odionec odio. Praesent libero. lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. Sed dignissim lacinia nunc. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu !</p>
+	 <h4 class="trevel_1"><a href="#">Litora Torquent Per</a></h4>
+	 <p>Vestibulum nec odionec odio. Praesent libero. lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero.</p>
+	  <h5><i class="fa fa-dot-circle-o"></i>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C.</h5>
+	  <h5><i class="fa fa-dot-circle-o"></i>Curabitursodales ligula in at Rs. 6,000 to over Rs. 2,68,000. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</h5>
+	  <h4>Sed dignissim lacinia nunc</h4>
+	 <p>Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum nec odionec odio. Praesent libero. lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. Sed dignissim lacinia nunc. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.!</p>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="center_3" class="clearfix">
+ <div class="container">
+  <div class="row">
+  <div class="center_3_top clearfix">
+   <div class="col-sm-6 center_3_top_left clearfix">
+    <div class="center_3_top_left_inner">
+	 <p>Nulla Quis Ipsum<a href="#">FUSCE NEC</a></p>
+	</div>
+   </div>
+   <div class="col-sm-6 center_3_top_right clearfix">
+    <div class="center_3_top_right_top clearfix">
+	 <div class="col-sm-5 center_3_top_right_top_left clearfix">
+	  <div class="center_3_top_right_top_left_inner clearfix">
+	   <p><a href="#">Nulla quis at nibh elementum</a></p>
+	  </div>
+	 </div>
+	 <div class="col-sm-7 center_3_top_right_top_right clearfix">
+	  <div class="center_3_top_right_top_right_inner clearfix">
+	   <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control form-control_top" placeholder="Email Address">
+            </div>
+            <button type="submit" class="btn btn-default subject">Submit</button>
+        </form>
+	  </div>
+	 </div>
+	</div>
+   </div>
+  </div>
+  </div>
+ </div>
+</section>
+
+<section id="footer" class="clearfix">
+ <div class="container">
+  <div class="row">
+  <div class="footer_top clearfix">
+   <div class="col-sm-3 footer_top_left clearfix">
+    <div class="footer_top_left_inner">
+     <h5>LITORA TORQUENT</h5>
+	 <p><a href="#">Nec</a></p>
+	 <p><a href="#">Porta</a></p>
+	 <p><a href="#">Arcu</a></p>
+	 <p><a href="#">Eget & Libero</a></p>
+	 <p><a href="#">Odio Fusce</a></p>
+	 <p><a href="#">Vestibulum</a></p>
+	 <p><a href="#">Curabitursodales</a></p>
+	</div>
+   </div>
+   <div class="col-sm-3 footer_top_left clearfix">
+    <div class="footer_top_left_inner">
+     <h5>ADIPISCING ELIT</h5>
+	 <h4>Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</h4>
+	</div>
+   </div>
+   <div class="col-sm-3 footer_right clearfix">
+	 <div class="footer_right_main clearfix">
+	  <h5>SED DIGNISSIM</h5>
+	  <div class="col-sm-1 footer_right_main_left clearfix">
+	   <div class="footer_right_main_left_inner">
+	    <p><i class="fa fa-globe"></i></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 footer_right_main_left clearfix">
+	   <div class="footer_right_main_right_inner clearfix">
+	    <p><span class="orange_1">100% ORIGINAL</span> guarantee <br>for all products at info.com</p>
+	   </div>
+	  </div>
+	 </div>
+	 <div class="footer_right_main clearfix">
+	  <div class="col-sm-1 footer_right_main_left clearfix">
+	   <div class="footer_right_main_left_inner">
+	    <p><i class="fa fa-deafness"></i></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 footer_right_main_left clearfix">
+	   <div class="footer_right_main_right_inner clearfix">
+	    <p><span class="orange_1">Return within 30days </span><br>of receiving your order</p>
+	   </div>
+	  </div>
+	 </div>
+	 <div class="footer_right_main clearfix">
+	  <div class="col-sm-1 footer_right_main_left clearfix">
+	   <div class="footer_right_main_left_inner">
+	    <p><i class="fa fa-truck"></i></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 footer_right_main_left clearfix">
+	   <div class="footer_right_main_right_inner clearfix">
+	    <p><span class="orange_1">Get free delivery for</span><br>every order above Rs. 1049</p>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+   <div class="col-sm-3 footer_corner clearfix">
+    <div class="footer_corner_inner clearfix">
+	 <h5>CONTACT US</h5>
+	 <p><a href="#">1800-222-9899(Toll Free)</a></p>
+	 <p><a href="#">info@gmail.com</a></p>
+	</div>
+	<div class="footer_corner_inner clearfix">
+	 <h5>WORKING HOURS</h5>
+	 <p><a href="#">9 A.M to 1 A.M IST (Mon - Sun)</a></p>
+	</div>
+   </div>
+  </div>
+  <div class="footer_middle clearfix">
+   <ul>
+    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+	<li><a href="#"><i class="fa fa fa-twitter"></i></a></li>
+	<li><a href="#"><i class="fa fa-google-plus-official"></i></a></li>
+	<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+	<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+	<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+   </ul>
+  </div>
+  </div>
+ </div>
+</section>
+
+<section id="footer_last" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="footer_last_top clearfix">
+    <div class="footer_4 clearfix">
+	 <div class="col-sm-6 footer_4_left clearfix">
+	  <div class="footer_4_left_inner clearfix">
+	   <p>Fusce nec tellus augue, <a href="#">Contact Us</a></p>
+	  </div>
+	 </div>
+	 <div class="col-sm-6 footer_4_right clearfix">
+	  <div class="footer_4_right_inner">
+	   <p class="website">© 2013 Your Website Name. All rights reserved | Design by<a href="http://www.templateonweb.com"> TemplateOnWeb</a></p>
+	  </div>
+	 </div>
+   </div>
+   </div>
+  </div>
+ </div>
+</section>
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+
+/*****Fixed Menu******/
+var secondaryNav = $('.cd-secondary-nav'),
+   secondaryNavTopPosition = secondaryNav.offset().top;
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > secondaryNavTopPosition ) {
+			secondaryNav.addClass('is-fixed');	
+		} else {
+			secondaryNav.removeClass('is-fixed');
+		}
+	});	
+	
+});
+</script>  
+<script type="text/javascript">
+	$(document).on('click', '.panel-heading span.clickable', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).on('click', '.panel div.clickable', function (e) {
+    var $this = $(this);
+    if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+    } else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+    }
+});
+$(document).ready(function () {
+    $('.panel-heading span.clickable').click();
+    $('.panel div.clickable').click();
+});
+
+	</script> 
+<script type="text/javascript">
+	function varticalCenterStuff() {
+    var windowHeight = $(window).height();
+    var loginBoxHeight = $('.login-box').innerHeight();
+    var welcomeTextHeight = $('.welcome-text').innerHeight();
+    var loggedIn = $('.logged-in').innerHeight();
+  
+    var mathLogin = (windowHeight / 2) - (loginBoxHeight / 2);
+    var mathWelcomeText = (windowHeight / 2) - (welcomeTextHeight / 2);
+    var mathLoggedIn = (windowHeight / 2) - (loggedIn / 2);
+    $('.login-box').css('margin-top', mathLogin);
+    $('.welcome-text').css('margin-top', mathWelcomeText);
+    $('.logged-in').css('margin-top', mathLoggedIn);
+}
+$(window).resize(function () {
+    varticalCenterStuff();
+});
+varticalCenterStuff();
+
+// awesomeness
+$('.btn-login').click(function(){
+    $(this).parent().fadeOut(function(){
+        $('.login-box').fadeIn();
+    })
+});
+
+$('.btn-cancel-action').click(function(e){
+    e.preventDefault();
+    $(this).parent().parent().parent().fadeOut(function(){
+        $('.welcome-text').fadeIn();
+    })
+});
+
+$('.btn-login-submit').click(function(e){
+  e.preventDefault();
+ 
+  var element = $(this).parent().parent().parent();
+  
+  var usernameEmail = $('#username-email').val();
+  var password = $('#password').val();
+  
+  if(usernameEmail == '' || password == ''){
+    
+    // wigle and show notification
+    // Wigle
+    var element = $(this).parent().parent().parent();
+    $(element).addClass('animated rubberBand');  
+    $(element).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(element).removeClass('animated rubberBand');
+    });
+    
+    // Notification
+    // reset
+    $('.notification.login-alert').removeClass('bounceOutRight notification-show animated bounceInRight');
+    // show notification
+    $('.notification.login-alert').addClass('notification-show animated bounceInRight');
+    
+    $('.notification.login-alert').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        setTimeout(function(){
+            $('.notification.login-alert').addClass('animated bounceOutRight');
+        }, 2000);
+    });
+  }else{
+    $(element).fadeOut(function(){
+      $('.logged-in').fadeIn();
+    });
+  }//endif
+});
+
+
+$('.btn-logout').click(function(){
+   $('.logged-in').fadeOut(function(){
+     $('.welcome-text').fadeIn();
+     // Notification
+     $('.notification.logged-out').removeClass('bounceOutRight notification-show animated bounceInRight');
+    // show notification
+    $('.notification.logged-out').addClass('notification-show animated bounceInRight');
+    
+    $('.notification.logged-out').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        setTimeout(function(){
+            $('.notification.logged-out').addClass('animated bounceOutRight');
+        }, 2000);
+    });
+     
+   });
+});
+	</script> 
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('#Carousel').carousel({
+        interval: 5000
+    })
+});
+	</script>   
+</html>

@@ -1,0 +1,88 @@
+{% extends 'seller_header.html' %}
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jewel-shop</title>
+    
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/global.css' %}" rel="stylesheet">
+	<link href="{% static 'css/index.css' %}" rel="stylesheet">
+	<link href="{% static 'css/about.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop.css' %}" rel="stylesheet">
+	<link href="{% static 'css/contact.css' %}" rel="stylesheet">
+	<link href="{% static 'css/blog.css' %}" rel="stylesheet">
+	<link href="{% static 'css/detail.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop_detail.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+	<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    <style type="text/css">
+        span {
+            color: darkorange;
+        }
+
+        h4{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+<br>
+    
+        <div class="row" style="margin-left: 10px;">
+            <div id="box" class="col-sm-3">
+                <div class="container">
+                    <div class="card">
+                        <img class="card-img-top" src="{{gold_jew.gold_image.url}}" alt="Card image" width="400px" height="400px">
+                        <div class="card-body"  style="margin-left: 600px; margin-top: -300px;">
+                            <h4 class="card-title">{{gold_jew.gold_name}}</h4><br>
+                            <p class="card-text">Design Code : &nbsp; {{gold_jew.gold_des_code}}</p><br>
+                            <p class="card-text">In stock  :&nbsp;&nbsp; {{gold_jew.gold_stock}}</p><br>
+                            <p class="card-text">Price : &nbsp;₹ {{gold_jew.gold_price}}</p><br>
+                            <p class="card-text">Gross Weight (g) &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;{{gold_jew.gold_gross}}</p><br>
+                            <p class="card-text">Net Weight (g)  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{gold_jew.gold_net}}</p><br>
+                            {% if gold_jew.gold_stone_wt == "" %}
+                            {% else %}
+                            <p class="card-text">Stone Weight (g)  &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{gold_jew.gold_stone_wt}}</p><br>
+                            {% endif %}
+                            <p class="card-text">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{gold_jew.gold_gender}}</p><br>
+                            <p class="card-text">Metal Colour  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{gold_jew.gold_metal_colour}}</p><br>
+                            <p class="card-text">Gold Purity  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{gold_jew.gold_purity}}</p><br>
+                            <p class="card-text">Gold Certification &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{gold_jew.gold_certification}}</p><br>
+                            {% if gold_jew.gold_stock == "Available"  %}
+                            <a href="{% url 'gold_stock_availability' pk=gold_jew.pk %}"><input type="button" value="Make To Order" class="btn btn-warning" style="margin-left: -550px; margin-top: -100px;"></a>
+                            {% else %}
+                            <a href="{% url 'gold_stock_availability' pk=gold_jew.pk %}"><input type="button" value="Make available" class="btn btn-success" style="margin-left: -550px; margin-top: -100px;"></a>
+                            {% endif %}
+                            <a href="{% url 'edit_gold_jewelry' pk=gold_jew.pk %}"><input type="button" value="Edit" class="btn btn-primary" style="margin-left: 32px; margin-top: -100px;"></a>
+                            <a href="{% url 'delete_gold_jewelry' pk=gold_jew.pk %}"><input type="button" value="Delete" class="btn btn-danger" style="margin-left: 30px; margin-top: -100px;"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    
+    
+    {% include 'footer.html' %}
+</body>
+</html>
+{% endblock %}

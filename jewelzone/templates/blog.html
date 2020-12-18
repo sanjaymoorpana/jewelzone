@@ -1,0 +1,590 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jewel-shop</title>
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="{% static 'css/global.css' %}" rel="stylesheet">
+	<link href="{% static 'css/index.css' %}" rel="stylesheet">
+	<link href="{% static 'css/about.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop.css' %}" rel="stylesheet">
+	<link href="{% static 'css/contact.css' %}" rel="stylesheet">
+	<link href="{% static 'css/blog.css' %}" rel="stylesheet">
+	<link href="{% static 'css/header.css' %}" rel="stylesheet">
+	<link href="{% static 'css/detail.css' %}" rel="stylesheet">
+	<link href="{% static 'css/shop_detail.css' %}" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+	<script src="{% static 'js/jquery-2.1.1.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
+    
+	
+     
+
+  </head>
+  
+<body>
+	<section id="header" class="clearfix" style="background-color: black;">
+		<div class="container">
+		 <div class="row">
+		  <div class="header_top clearfix">
+		   <div class="col-sm-3 header_top_left clearfix">
+			<div class="header_top_left_inner clearfix">
+			 <p><a href="#">Call 1800-222-9289</a></p>
+			</div>
+		   </div>
+		   <div class="col-sm-4 header_top_middle clearfix">
+			<div class="header_top_middle_inner clearfix">
+			 <p><a href="#"><span class="trouble_1"></span>FLAT 10% OFF ON MARRIAGE</a></p>
+			</div>
+		   </div>
+		   <div class="col-sm-5 header_top_right clearfix">
+			<div class="header_top_right_inner clearfix">
+			 <ul>
+			  <li><a href="#"><img src="{% static 'img/1.png' %}"></a><span class="trouble_2">|</span></li>
+			  <li><a href="{% url 'login' %}">Log in</a><span class="trouble_2">|</span></li>
+			  <li><a href="{% url 'signup' %}">Sign up</a><span class="trouble_2">|</span></li>
+			  <li class="dropdown">
+							 <!-- <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false">Wishlist(0)<span class="caret"></span></a> -->
+							 <ul class="dropdown-menu drop_1" role="menu">
+							   <li><a class="tag_menu_down" href="#">No products in the cart</a></li>
+							 </ul>
+						   <!-- <span class="trouble_2">|</span></li> -->
+			  <li class="dropdown">
+							 <!-- <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false">Try@Home(0)<span class="caret"></span></a> -->
+							 <ul class="dropdown-menu drop_1" role="menu">
+							   <li><a class="tag_menu_down" href="#">No products in the cart</a></li>
+							 </ul>
+						   </li>
+			 </ul>
+			</div>
+		   </div>
+		  </div>
+		 </div>
+		</div>
+	   </section>
+	   
+	   <section id="header_2"  class="cd-secondary-nav">
+		   <nav class="navbar navbar-default">
+			   <div class="container-fluid">
+				   <!-- Brand and toggle get grouped for better mobile display -->
+				   <div class="navbar-header page-scroll">
+					   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						   <span class="sr-only">Toggle navigation</span>
+						   <span class="icon-bar"></span>
+						   <span class="icon-bar"></span>
+						   <span class="icon-bar"></span>
+					   </button>
+					   <a class="navbar-brand" href="index.html"><img src="{% static 'img/2.png' %}" style="width: 185px; height: 75px;"></a>
+				   </div>
+	   
+				   <!-- Collect the nav links, forms, and other content for toggling -->
+				   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					   
+						<ul class="nav navbar-nav">
+						
+						   <li>
+							   <a class="tag_menu active_tab" href="{% url 'home' %}">HOME</a>
+						   </li>
+						   
+						   <li>
+							   <a class="tag_menu" href="{% url 'blog' %}">BLOG</a>
+						   </li>
+						   
+						   <li>
+							   <a class="tag_menu" href="{% url 'about' %}">ABOUT</a>
+						   </li>
+						   
+						   <li>
+							   <a class="tag_menu" href="{% url 'contact' %}">CONTACT</a>
+						   </li>
+						   
+						   <!-- <li class="dropdown">
+							 <a class="tag_menu" href="blog.html" data-toggle="dropdown" role="button" aria-expanded="false">MORE<span class="caret"></span></a>
+							 <ul class="dropdown-menu drop_1" role="menu">
+							   <li><a href="blog.html">Home</a></li>
+							   <li><a href="blog.html">Blogpost</a></li>
+							   <li><a href="blog.html">Detail</a></li>
+							   <li><a href="blog.html">Grade</a></li>
+							 </ul>
+						   </li> -->
+						</ul>
+						<ul class="nav navbar-right">
+						 <!-- <li style="color: black;"><a class="tab_3" href="#"><i class="fa fa-search"></i></a></li> -->
+						 <!-- <li><a class="tab_3" href="#"><i class="fa fa-bell"></i></a></li> -->
+						 <!-- <li><a class="tab_3" href="#"><i class="fa fa-shopping-cart"></i></a></li> -->
+						</ul>
+				   </div>
+				   <!-- /.navbar-collapse -->
+			   </div>
+			   <!-- /.container-fluid -->
+		   </nav>
+	   </section>
+
+<section id="blog" class="clearfix">
+ <div class="blog_top clearfix">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  	<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			    <div class="item">
+			     	<div class="blog_top_main clearfix">
+										  <div class="col-sm-4 blog_top_main_left clearfix">
+										   <div class="blog_top_main_left_inner clearfix">
+										    <div class="ih-item square effect13 left_to_right"><a href="#">
+                      <div class="img"><img src="{% static 'img/126.png' %}" alt="img"></div>
+                      <div class="info">
+                        <h3>16 March 2018</h3>
+                        <p>Integer nec odionec odio. Praesent libero sed cursus ante</p>
+						<h5>Jewellery Amet/Sociosqu</h5>
+                      </div></a></div>
+										   </div>
+										  </div>
+										  <div class="col-sm-4 blog_top_main_left clearfix">
+										   <div class="blog_top_main_left_inner clearfix">
+										    <div class="ih-item square effect13 left_to_right"><a href="#">
+                      <div class="img"><img src="{% static 'img/127.png' %}" alt="img"></div>
+                      <div class="info">
+                        <h3>19 April 2018</h3>
+                        <p>Integer nec odionec odio. Praesent libero sed cursus ante</p>
+						<h5>Jewellery Amet/Sociosqu</h5>
+                      </div></a></div>
+										   </div>
+										  </div>
+										  <div class="col-sm-4 blog_top_main_left clearfix">
+										   <div class="blog_top_main_left_inner clearfix">
+										    <div class="ih-item square effect13 left_to_right"><a href="#">
+                      <div class="img"><img src="{% static 'img/128.png' %}" alt="img"></div>
+                      <div class="info">
+                        <h3>30 June 2018</h3>
+                        <p>Integer nec odionec odio. Praesent libero sed cursus ante</p>
+						<h5>Jewellery Amet/Sociosqu</h5>
+                      </div></a></div>
+										   </div>
+										  </div>
+										 </div>
+			    	
+                    <!-- Static Header -->
+                 <!-- /header-text -->
+			    </div>
+			    <div class="item">
+			    	<div class="blog_top_main clearfix">
+										  <div class="col-sm-4 blog_top_main_left clearfix">
+										   <div class="blog_top_main_left_inner clearfix">
+										    <div class="ih-item square effect13 left_to_right"><a href="#">
+                      <div class="img"><img src="{% static 'img/129.jpg' %}" alt="img"></div>
+                      <div class="info">
+                        <h3>22 April 2018</h3>
+                        <p>Integer nec odionec odio. Praesent libero sed cursus ante</p>
+						<h5>Jewellery Amet/Sociosqu</h5>
+                      </div></a></div>
+										   </div>
+										  </div>
+										  <div class="col-sm-4 blog_top_main_left clearfix">
+										   <div class="blog_top_main_left_inner clearfix">
+										    <div class="ih-item square effect13 left_to_right"><a href="#">
+                      <div class="img"><img src="{% static 'img/130.png' %}" alt="img"></div>
+                      <div class="info">
+                        <h3>15 August 2018</h3>
+                        <p>Integer nec odionec odio. Praesent libero sed cursus ante</p>
+						<h5>Jewellery Amet/Sociosqu</h5>
+                      </div></a></div>
+										   </div>
+										  </div>
+										  <div class="col-sm-4 blog_top_main_left clearfix">
+										   <div class="blog_top_main_left_inner clearfix">
+										    <div class="ih-item square effect13 left_to_right"><a href="#">
+                      <div class="img"><img src="{% static 'img/131.jpg' %}" alt="img"></div>
+                      <div class="info">
+                        <h3>15 March 2018</h3>
+                        <p>Integer nec odionec odio. Praesent libero sed cursus ante</p>
+						<h5>Jewellery Amet/Sociosqu</h5>
+                      </div></a></div>
+										   </div>
+										  </div>
+										 </div>
+			    	<!-- Static Header -->
+                    <!-- /header-text -->
+			    </div>
+			    <div class="item active">
+			    	<div class="blog_top_main clearfix">
+										  <div class="col-sm-4 blog_top_main_left clearfix">
+										   <div class="blog_top_main_left_inner clearfix">
+										    <div class="ih-item square effect13 left_to_right"><a href="#">
+                      <div class="img"><img src="{% static 'img/126.png' %}" alt="img"></div>
+                      <div class="info">
+                        <h3>25 April 2018</h3>
+                        <p>Integer nec odionec odio. Praesent libero sed cursus ante</p>
+						<h5>Jewellery Amet/Sociosqu</h5>
+                      </div></a></div>
+										   </div>
+										  </div>
+										  <div class="col-sm-4 blog_top_main_left clearfix">
+										   <div class="blog_top_main_left_inner clearfix">
+										    <div class="ih-item square effect13 left_to_right"><a href="#">
+                      <div class="img"><img src="{% static 'img/127.png' %}" alt="img"></div>
+                      <div class="info">
+                        <h3>10 April 2018</h3>
+                        <p>Integer nec odionec odio. Praesent libero sed cursus ante</p>
+						<h5>Jewellery Amet/Sociosqu</h5>
+                      </div></a></div>
+										   </div>
+										  </div>
+										  <div class="col-sm-4 blog_top_main_left clearfix">
+										   <div class="blog_top_main_left_inner clearfix">
+										    <div class="ih-item square effect13 left_to_right"><a href="#">
+                      <div class="img"><img src="{% static 'img/128.png' %}" alt="img"></div>
+                      <div class="info">
+                        <h3>16 July 2018</h3>
+                        <p>Integer nec odionec odio. Praesent libero sed cursus ante</p>
+						<h5>Jewellery Amet/Sociosqu</h5>
+                      </div></a></div>
+										   </div>
+										  </div>
+										 </div>
+			    	<!-- Static Header -->
+                    <!-- /header-text -->
+			    </div>
+			</div>
+			<!-- Controls -->
+			<a class="left carousel-control" href="http://bootsnipp-env.elasticbeanstalk.com/iframe/7B4x#carousel-example-generic" data-slide="prev">
+		    	<span class="glyphicon glyphicon-chevron-left"></span>
+			</a>
+			<a class="right carousel-control" href="http://bootsnipp-env.elasticbeanstalk.com/iframe/7B4x#carousel-example-generic" data-slide="next">
+		    	<span class="glyphicon glyphicon-chevron-right"></span>
+			</a>
+		</div>
+ </div>
+</section>
+
+<section id="blog_2" class="clearfix">
+ <div class="container">
+  <div class="row">
+   <div class="blog_2_top clearfix">
+    <div class="col-sm-9 blog_2_top_left clearfix">
+	 <div class="blog_2_top_left_top clearfix">
+     <div class="blog_2_top_left_inner clearfix">
+	  <p><a href="#"><img src="{% static 'img/132.png' %}"></a></p>
+	 </div>
+	 <div class="blog_2_top_left_inner_2 clearfix">
+	  <h4>September 18, 2018</h4>
+	  <h2><a href="#">MAURIS MASSA VESTIBULUM LACINIA ARCU EGET</a></h2>
+	  <hr class="hr_2">
+	  <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero. Sed dignissim lacinia nunc dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa....</p>
+	 </div>
+	 </div>
+	 <div class="blog_2_top_left_top clearfix">
+	  <div class="blog_2_top_left_inner clearfix">
+	  <p><a href="#"><img src="{% static 'img/133.png' %}"></a></p>
+	 </div>
+	 <div class="blog_2_top_left_inner_2 clearfix">
+	  <h4>July 19, 2018</h4>
+	  <h2><a href="#">Consectetur adipiscing elit. Integer nec odionec Praesent</a></h2>
+	  <hr class="hr_2">
+	  <p> Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero....</p>
+	 </div>
+	 </div>
+	 <div class="blog_2_top_left_top clearfix">
+	   <div class="blog_2_top_left_inner clearfix">
+	  <p><a href="#"><img src="{% static 'img/134.png' %}"></a></p>
+	 </div>
+	 <div class="blog_2_top_left_inner_2 clearfix">
+	  <h4>March 15, 2018</h4>
+	  <h2><a href="#">Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem</a></h2>
+	  <hr class="hr_2">
+	  <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero.......</p>
+	 </div>
+	 </div>
+	 <div class="blog_2_top_left_top clearfix">
+	   <div class="blog_2_top_left_inner clearfix">
+	  <p><a href="#"><img src="{% static 'img/96.jpg' %}"></a></p>
+	 </div>
+	 <div class="blog_2_top_left_inner_2 clearfix">
+	  <h4>August 13, 2018</h4>
+	  <h2><a href="#">Curabitursodales ligula in Sed dignissim lacinia nunc.</a></h2>
+	  <hr class="hr_2">
+	 <p>Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos C. Curabitursodales ligula in libero.......</p>
+	 </div>
+	 </div>
+	 <div class="blog_2_top_left_bottom clearfix">
+	  <ul> 
+	   <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+	   <li class="active_4"><a href="#">1</a></li>
+	   <li><a href="#">2</a></li>
+	   <li><a href="#">3</a></li>
+	   <li><a href="#">4</a></li>
+	   <li><a href="#">5</a></li>
+	   <li><a href="#">6</a></li>
+	   <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+	   <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+	  </ul>
+	 </div>
+	</div>
+	<div class="col-sm-3 blog_2_top_right clearfix">
+	 <div class="blog_2_top_right_top clearfix">
+	  <div class="blog_2_top_right_top_inner clearfix">
+	   <h4>ABOUT</h4>
+	   <h3><img src="{% static 'img/89.png' %}"></h3>
+	   <p>Duis sagittis ipsum amet ad, consectetur adipiscing elit. Integer nec! Sed dignissim lacinia nunc.</p>
+	   <ul>
+	    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+		<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+		<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	   </ul>
+	  </div>
+	  <div class="blog_2_top_right_top_inner_2 clearfix">
+	   <h4>CATEGORIES</h4>
+	   <p><a href="#">INTEGERNEC (12)</a></p>
+	   <p><a href="#">TELLUS SED AUGUE (2)</a></p>
+	   <p><a href="#">LITORA TORQUENT (34)</a></p>
+	   <p><a href="#">VESTIBULUM LACINIA ARCU (3)</a></p>
+	   <p><a href="#">ADIPISCING ELIT (14)</a></p>
+	   <p><a href="#">DAPIBUS DIAM (34)</a></p>
+	   <p><a href="#">HOW TO (24)</a></p>
+	   <p><a href="#">DUIS SAGITTIS IPSUM (4)</a></p>
+	   <p><a href="#">TORQUENT PER (2)</a></p>
+	   <p><a href="#">TORQUENT ARCU (243)</a></p>
+	   <p><a href="#">SAGITTIS (131)</a></p>
+	   <p><a href="#">DAPIBUS (11)</a></p>
+	    <p><a href="#">LIBERO IPSUM (22)</a></p>
+		 <p><a href="#">LIBERO LACINIA (34)</a></p>
+		  <p><a href="#">SED & SEMPER (15)</a></p>
+		   <p><a href="#">LOREM AUGUE (27)</a></p>
+		    <p><a href="#">DIGISSIMARCU (65)</a></p>
+	  </div>
+	  <div class="blog_2_top_right_top_inner_3 clearfix">
+	   <h4>POPULAR POSTS</h4>
+	   <h3><a href="#"><img src="{% static 'img/90.png' %}"></a></h3>
+	   <p><a href="#">MAURIS MASSA: LITORA TORQUENT PER CONUBIA NOSTRA, INCEPTOS</a></p>
+	   <h3><a href="#"><img src="{% static 'img/91.png' %}"></a></h3>
+	   <p><a href="#">CURSUS ANTE: 2018 ARCU</a></p>
+	   <h3><a href="#"><img src="{% static 'img/92.png' %}"></a></h3>
+	   <p><a href="#">INTEGER NEC: 2017 ARCU</a></p>
+	  </div>
+	  <div class="blog_2_top_right_top_inner_4 clearfix">
+	   <div class="blog_2_top_right_top_inner_4_main clearfix">
+	    <h4>LATEST POSTS</h4>
+	   </div>
+	   <div class="blog_2_top_right_top_inner_4_bottom clearfix">
+	   <div class="col-sm-6 blog_2_top_right_top_inner_4_left clearfix">
+	    <div class="blog_2_top_right_top_inner_4_left_inner clearfix">
+		 <p><a href="#"><img src="{% static 'img/93.png' %}"></a></p>
+		</div>
+	   </div>
+	   <div class="col-sm-6 blog_2_top_right_top_inner_4_right clearfix">
+	    <div class="blog_2_top_right_top_inner_4_right_inner clearfix">
+		 <p><a href="#">FUSCE NEC TELLUS SED AUGUE SEMPER PORTA.</a></p>
+		</div>
+	   </div>
+	   </div>
+	   <div class="blog_2_top_right_top_inner_4_bottom clearfix">
+	   <div class="col-sm-6 blog_2_top_right_top_inner_4_left clearfix">
+	    <div class="blog_2_top_right_top_inner_4_left_inner clearfix">
+		 <p><a href="#"><img src="{% static 'img/94.png' %}"></a></p>
+		</div>
+	   </div>
+	   <div class="col-sm-6 blog_2_top_right_top_inner_4_right clearfix">
+	    <div class="blog_2_top_right_top_inner_4_right_inner clearfix">
+		 <p><a href="#">VESTIBULU LACINIA ARCU EGET NULLA LITORA</a></p>
+		</div>
+	   </div>
+	   </div>
+	   <div class="blog_2_top_right_top_inner_4_bottom clearfix">
+	   <div class="col-sm-6 blog_2_top_right_top_inner_4_left clearfix">
+	    <div class="blog_2_top_right_top_inner_4_left_inner clearfix">
+		 <p><a href="#"><img src="{% static 'img/95.png' %}"></a></p>
+		</div>
+	   </div>
+	   <div class="col-sm-6 blog_2_top_right_top_inner_4_right clearfix">
+	    <div class="blog_2_top_right_top_inner_4_right_inner clearfix">
+		 <p><a href="#">APTENT TACITI SOCIOSQU AD LITORA TORQUENT</a></p>
+		</div>
+	   </div>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="center_3" class="clearfix">
+ <div class="container">
+  <div class="row">
+  <div class="center_3_top clearfix">
+   <div class="col-sm-6 center_3_top_left clearfix">
+    <div class="center_3_top_left_inner">
+	 <p>Nulla Quis Ipsum<a href="#">FUSCE NEC</a></p>
+	</div>
+   </div>
+   <div class="col-sm-6 center_3_top_right clearfix">
+    <div class="center_3_top_right_top clearfix">
+	 <div class="col-sm-5 center_3_top_right_top_left clearfix">
+	  <div class="center_3_top_right_top_left_inner clearfix">
+	   <p><a href="#">Nulla quis at nibh elementum</a></p>
+	  </div>
+	 </div>
+	 <div class="col-sm-7 center_3_top_right_top_right clearfix">
+	  <div class="center_3_top_right_top_right_inner clearfix">
+	   <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control form-control_top" placeholder="Email Address">
+            </div>
+            <button type="submit" class="btn btn-default subject">Submit</button>
+        </form>
+	  </div>
+	 </div>
+	</div>
+   </div>
+  </div>
+  </div>
+ </div>
+</section>
+
+<section id="footer" class="clearfix">
+ <div class="container">
+  <div class="row">
+  <div class="footer_top clearfix">
+   <div class="col-sm-3 footer_top_left clearfix">
+    <div class="footer_top_left_inner">
+     <h5>LITORA TORQUENT</h5>
+	 <p><a href="#">Nec</a></p>
+	 <p><a href="#">Porta</a></p>
+	 <p><a href="#">Arcu</a></p>
+	 <p><a href="#">Eget & Libero</a></p>
+	 <p><a href="#">Odio Fusce</a></p>
+	 <p><a href="#">Vestibulum</a></p>
+	 <p><a href="#">Curabitursodales</a></p>
+	</div>
+   </div>
+   <div class="col-sm-3 footer_top_left clearfix">
+    <div class="footer_top_left_inner">
+     <h5>ADIPISCING ELIT</h5>
+	 <h4>Integer nec odionec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</h4>
+	</div>
+   </div>
+   <div class="col-sm-3 footer_right clearfix">
+	 <div class="footer_right_main clearfix">
+	  <h5>SED DIGNISSIM</h5>
+	  <div class="col-sm-1 footer_right_main_left clearfix">
+	   <div class="footer_right_main_left_inner">
+	    <p><i class="fa fa-globe"></i></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 footer_right_main_left clearfix">
+	   <div class="footer_right_main_right_inner clearfix">
+	    <p><span class="orange_1">100% ORIGINAL</span> guarantee <br>for all products at info.com</p>
+	   </div>
+	  </div>
+	 </div>
+	 <div class="footer_right_main clearfix">
+	  <div class="col-sm-1 footer_right_main_left clearfix">
+	   <div class="footer_right_main_left_inner">
+	    <p><i class="fa fa-deafness"></i></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 footer_right_main_left clearfix">
+	   <div class="footer_right_main_right_inner clearfix">
+	    <p><span class="orange_1">Return within 30days </span><br>of receiving your order</p>
+	   </div>
+	  </div>
+	 </div>
+	 <div class="footer_right_main clearfix">
+	  <div class="col-sm-1 footer_right_main_left clearfix">
+	   <div class="footer_right_main_left_inner">
+	    <p><i class="fa fa-truck"></i></p>
+	   </div>
+	  </div>
+	  <div class="col-sm-11 footer_right_main_left clearfix">
+	   <div class="footer_right_main_right_inner clearfix">
+	    <p><span class="orange_1">Get free delivery for</span><br>every order above Rs. 1049</p>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+   <div class="col-sm-3 footer_corner clearfix">
+    <div class="footer_corner_inner clearfix">
+	 <h5>CONTACT US</h5>
+	 <p><a href="#">1800-222-9899(Toll Free)</a></p>
+	 <p><a href="#">info@gmail.com</a></p>
+	</div>
+	<div class="footer_corner_inner clearfix">
+	 <h5>WORKING HOURS</h5>
+	 <p><a href="#">9 A.M to 1 A.M IST (Mon - Sun)</a></p>
+	</div>
+   </div>
+  </div>
+  <div class="footer_middle clearfix">
+   <ul>
+    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+	<li><a href="#"><i class="fa fa fa-twitter"></i></a></li>
+	<li><a href="#"><i class="fa fa-google-plus-official"></i></a></li>
+	<li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+	<li><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+	<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+	<li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+   </ul>
+  </div>
+  </div>
+ </div>
+</section>
+
+
+</body>
+<script type="text/javascript">
+$(document).ready(function(){
+
+/*****Fixed Menu******/
+var secondaryNav = $('.cd-secondary-nav'),
+   secondaryNavTopPosition = secondaryNav.offset().top;
+	$(window).on('scroll', function(){
+		if($(window).scrollTop() > secondaryNavTopPosition ) {
+			secondaryNav.addClass('is-fixed');	
+		} else {
+			secondaryNav.removeClass('is-fixed');
+		}
+	});	
+	
+});
+</script>  
+<script type="text/javascript">
+	  jQuery(document).ready(function($) {
+ 
+        $('#myCarousel').carousel({
+                interval: 5000
+        });
+ 
+        $('#carousel-text').html($('#slide-content-0').html());
+ 
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').click( function(){
+                var id_selector = $(this).attr("id");
+                var id = id_selector.substr(id_selector.length -1);
+                var id = parseInt(id);
+                $('#myCarousel').carousel(id);
+        });
+ 
+ 
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid', function (e) {
+                var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+        });
+});
+	</script>     
+</html>

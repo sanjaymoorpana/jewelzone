@@ -1,0 +1,167 @@
+/*
+Template Name:Jewel-shop
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+body{
+font-family: 'Oswald', sans-serif
+   }
+h1,h2,h3,h4,h5,h6{
+padding:0;
+margin:0;
+}
+a:hover{
+text-decoration:none;
+}
+ul{
+padding:0;
+margin:0;
+list-style:none;
+}
+p{
+padding:0;
+margin:0;
+}
+.space_left{
+padding-left:0; 
+} 
+.space_right{
+padding-right:0; 
+} 
+.space_all{
+padding:0; 
+} 
+.border_none_1{
+   border:none!important;
+   }
+.active_tab{
+   color:#c08585!important;
+  }
+.left_1{
+  display:block;
+ }
+
+
+
+/*********************contact****************/
+#contact{
+   padding-top:40px;
+   padding-bottom:80px;
+	}
+#contact h1{
+   padding:0;
+   margin:0;
+   color:#556681;
+   font-size:40px;
+   padding-bottom:60px;
+	}
+.contact_1 p{
+   padding:0;
+   margin:0;
+	}
+.contact_1 .text_3{
+   letter-spacing:1px;
+	}
+.contact_1 .text_1 i{
+   padding:0;
+   margin:0;
+   border-radius:100%;
+   font-size: 1.5em;
+   color: #fff;
+   background: #556681;
+   padding:20px 25px 20px 25px;
+	}
+.contact_1 .text_1 i:hover{
+  background: #fac122;
+  color:#000;
+	}
+.contact_1 .text_2 i{
+   padding:0;
+   margin:0;
+   border-radius:100%;
+   font-size: 1.5em;
+   color: #fff;
+   background: #556681;
+   padding:20px;
+	}
+.contact_1 .text_2 i:hover{
+    background: #fac122;
+    color:#000;
+	}
+.contact_1 h3{
+   padding:0;
+   margin:0;
+   padding-top:15px;
+   font-size:25px;
+   padding-bottom:15px;
+   color:#000;
+	}
+.contact_1  a{
+  color:#000;
+  font-weight:bold;
+	}
+.contact_1  a:hover{
+	  color: #c34d5f;
+	}
+#contact .touch{
+  padding:0;
+  margin:0;
+  padding-top:50px;
+  padding-bottom:30px;
+  color:#000;
+  font-size:27px;
+	}
+.contact_3 {
+		margin-top:15px;  
+			}
+.contact_3 a {
+	   background:#556681;
+	   color:#ffffff;
+	   padding:15px 40px 15px 40px; 
+	   border-radius:5px;
+	   letter-spacing:1px; 
+			}
+.contact_3 a:hover {
+	   background: #fac122;
+	   color:#000;
+			}
+.contact_2 .form-control{
+	   min-height:50px; 
+			}
+	
+.contact_3 .form_1{
+		 min-height:200px;
+		 margin-bottom:50px; 
+		 width:100%!important;  
+			}
+
+/*********************contact_end****************/
+
+
+
+
+
+
+@media screen and (max-width : 767px){
+}
+
+}
+
+@media (min-width:768px) and (max-width:960px) { 
+
+}
+
+@media (min-width:961px) and (max-width:1200px) {
+
+}
+
+@media (min-width:1201px) and (max-width:1250px) {
+
+ }
+
+
+
+
+
