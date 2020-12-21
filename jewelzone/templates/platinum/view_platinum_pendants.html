@@ -31,7 +31,7 @@
     
     <style type="text/css">
         span {
-            color: darkorange;
+            color: lightpink;
         }
 
     </style>
@@ -47,7 +47,7 @@
             <div id="box" class="col-sm-3">
                 <div class="container">
                     <div class="card">
-                        <a href="{% url 'platinum_product_detail' pk=pp.pk %}"><img class="card-img-top" src="{pp.platinum_image.url}}" alt="Card image" width="200px" height="200px"></a>
+                        <a href="{% url 'platinum_product_detail' pk=pp.pk %}"><img class="card-img-top" src="{{pp.platinum_image.url}}" alt="Card image" width="200px" height="200px"></a>
                         <div class="card-body">
                             <h4 class="card-title">{{pp.platinum_name}}</h4><br>
                             <p class="card-text">Price: {{pp.platinum_price}}</p><br>

@@ -71,10 +71,18 @@ def index(request):
     return render(request,'index.html')
 
 def about(request):
-    return render(request,'about.html')
+    data = "index_header.html"
+    if data:
+        return render(request,'about.html',{'data':data})
+    else:    
+        return render(request,'about.html')
 
 def blog(request):
-    return render(request,'blog.html')
+    data = "index_header.html"
+    if data:
+        return render(request,'blog.html',{'data':data})
+    else:       
+        return render(request,'blog.html')
 
 def seller_index(request):
     return render(request,'seller_index.html')
@@ -93,14 +101,6 @@ def contact(request):
     else:
         return render(request,'contact.html')
 
-def detail(request):
-    return render(request,'detail.html')
-
-def shop_detail(request):
-    return render(request,'shop_detail.html')
-
-def shop(request):
-    return render(request,'shop.html')
 
 def login(request):
     if request.method == "POST":
@@ -134,6 +134,7 @@ def login(request):
                     request.session['email'] = user.email
                     request.session['fname'] = user.fname
                     request.session['user_image'] = user.user_image.url
+                    print("USER IMAGE")
                     return render(request,'seller_index.html')                
                 except Exception as e:
                     print("seller : ",e)
@@ -361,7 +362,7 @@ def add_gold_jewelry(request):
 def view_gold_rings(request):
     user = User.objects.get(email=request.session['email'])
     goldjew = Gold_jewelry.objects.filter(user=user,gold_category="rings")
-    return render(request,'gold/view_gold_rings.html',{'goldjew':goldjew})
+    return render(request,'gold/view_gold_rings.html',{'goldjew':goldjew,'user':user})
 
 def view_gold_necklace(request):
     user = User.objects.get(email=request.session['email'])

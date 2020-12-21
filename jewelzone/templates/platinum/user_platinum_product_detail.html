@@ -31,7 +31,7 @@
     
     <style type="text/css">
         span {
-            color: darkorange;
+            color: lightpink;
         }
 
         h4{
@@ -63,8 +63,10 @@
                             <p class="card-text">Metal Colour  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{pt_jew.platinum_metal_colour}}</p><br>
                             <p class="card-text">Platinum Purity  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{pt_jew.platinum_purity}}</p><br>
                             <p class="card-text">Platinum Certification &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{pt_jew.platinum_certification}}</p><br>
+                            {% if pt_jew.platinum_diamond_certification == "" %}
+                            {% else %}
                             <p class="card-text">Diamond Certification &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{pt_jew.platinum_diamond_certification}}</p><br>
-                            
+                            {% endif %}
                             
                             {% if not flag1 and flag == True %}
                             <a href="{% url 'move_to_cart' pk=pt_jew.pk f='pj' %}"><input type="button" value="Move to Cart" class="btn btn-primary" style="margin-left: -525px; margin-top: -100px;"></a>

@@ -26,7 +26,7 @@ SECRET_KEY = '@+^i-@@ja!h&^=qi&**0hy6vdcl6+rl+3=g@mqe+60zbv-$dsj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['localhost','127.0.0.1','jewelzone.pythonanywhere']
 
 
 # Application definition
