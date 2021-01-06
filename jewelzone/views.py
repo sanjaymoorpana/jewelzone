@@ -64,30 +64,40 @@ def callback(request):
         return render(request, 'payments/callback.html', context=received_data)
 
 
-def home(request):
-    return render(request,'home.html')
-
 def index(request):
     return render(request,'index.html')
 
 def about(request):
-    data = "index_header.html"
-    if data:
-        return render(request,'about.html',{'data':data})
-    else:    
+    try:
+        user = User.objects.get(email=request.session['email'])
+
+        if user.usertype == "seller":
+            data = "seller_header.html"
+            return render(request,'about.html',{'data':data,'user':user})    
+        else:
+            return render(request,'about.html')  
+
+    except:
         return render(request,'about.html')
 
 def blog(request):
-    data = "index_header.html"
-    if data:
-        return render(request,'blog.html',{'data':data})
-    else:       
+    try:
+        user = User.objects.get(email=request.session['email'])
+
+        if user.usertype == "seller":
+            data = "seller_header.html"
+            return render(request,'blog.html',{'data':data,'user':user})    
+        else:
+            return render(request,'blog.html')  
+        
+    except:
         return render(request,'blog.html')
 
 def seller_index(request):
     return render(request,'seller_index.html')
 
 def contact(request):
+
     if request.method == "POST":
         name = request.POST['name']
         email = request.POST['email']
@@ -98,8 +108,18 @@ def contact(request):
         msg = "Contact Saved Successfully"
         return render(request,'contact.html',{'msg':msg})
 
+    
     else:
-        return render(request,'contact.html')
+        try:
+            user = User.objects.get(email=request.session['email'])
+            if user.usertype == "seller":
+                data = "seller_header.html"
+                return render(request,'contact.html',{'data':data,'user':user})    
+            else:
+                return render(request,'contact.html')  
+        
+        except:
+            return render(request,'contact.html')
 
 
 def login(request):
@@ -116,6 +136,7 @@ def login(request):
                     request.session['email'] = user.email
                     request.session['fname'] = user.fname
                     request.session['user_image'] = user.user_image.url
+                    print("USER IMAGE")
                     wishlists = Wishlist.objects.filter(user=user)
                     request.session['total_wishlist']=len(wishlists)
                     carts = Cart.objects.filter(user=user)
@@ -215,10 +236,10 @@ def logout(request):
     try:
         del request.session['fname']
         del request.session['email']
-        return render(request,'home.html')
+        return render(request,'index.html')
     
     except:
-        return render(request,'home.html')
+        return render(request,'index.html')
 
 def forgot_password(request):
     if request.method == "POST":

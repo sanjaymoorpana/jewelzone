@@ -45,22 +45,33 @@
 
 <body>
 <br>    
+        
         <div class="row" style="margin-left: 10px;">
             {% for g in goldjew %}
             <div id="box" class="col-sm-3">
                 <div class="container">
                     <div class="card">
+                        {% if request.session.fname %}
                         <a href="{% url 'user_gold_product_detail' pk=g.pk %}"><img class="card-img-top" src="{{g.gold_image.url}}" alt="Card image" width="200px" height="200px"></a>
                         <div class="card-body">
                             <h4 class="card-title">{{g.gold_name}}</h4><br>
                             <p class="card-text">Design Code: {{g.gold_des_code}}</p><br>
                             <p class="card-text">Price: ₹ {{g.gold_price}}</p><br>
                         </div>
+                        {% else %}
+                        <a href="{% url 'login' %}"><img class="card-img-top" src="{{g.gold_image.url}}" alt="Card image" width="200px" height="200px"></a>
+                        <div class="card-body">
+                            <h4 class="card-title">{{g.gold_name}}</h4><br>
+                            <p class="card-text">Design Code: {{g.gold_des_code}}</p><br>
+                            <p class="card-text">Price: ₹ {{g.gold_price}}</p><br>
+                        </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
             {% endfor %}
         </div>
+    
         <br><br><br><br>
 
     
